@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Interview Created Successfully</title>
+
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+</head>
+
+<body class="success-body">
+
+<div class="success-container">
+
+    <div class="success-card">
+
+        <div class="success-icon">
+            ✓
+        </div>
+
+        <h1>Interview Created Successfully!</h1>
+
+        <p>
+            The interview session has been created successfully.
+            Review the information below and launch the AI interview.
+        </p>
+
+        <div class="candidate-info">
+
+            <div class="info-box">
+                <h3>Candidate Name</h3>
+                <p>{{ candidate.name }}</p>
+            </div>
+
+            <div class="info-box">
+                <h3>Interview ID</h3>
+                <p>{{ candidate.interview_id }}</p>
+            </div>
+
+            <div class="info-box">
+                <h3>Position</h3>
+                <p>{{ candidate.position }}</p>
+            </div>
+
+            <div class="info-box">
+                <h3>Department</h3>
+                <p>{{ candidate.department }}</p>
+            </div>
+
+            <div class="info-box">
+                <h3>Date</h3>
+                <p>{{ candidate.date }}</p>
+            </div>
+
+            <div class="info-box">
+                <h3>Time</h3>
+                <p>{{ candidate.time }}</p>
+            </div>
+
+        </div>
+
+        <div class="status-box">
+
+            <span class="status-dot"></span>
+
+            <span>System Ready for AI Interview</span>
+
+        </div>
+
+        <div class="button-area">
+
+            <button
+                class="back-btn"
+                onclick="window.location.href='/dashboard'">
+
+                Back to Dashboard
+
+            </button>
+
+            <button
+                class="launch-btn"
+                onclick="window.location.href='/interview'">
+
+                Launch AI Interview
+
+            </button>
+
+        </div>
+
+    </div>
+
+</div>
+
+</body>
+
+</html>

@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ALIBI AI | Interview Fraud Detection</title>
+
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+
+<body>
+
+<nav>
+    <div class="logo">
+        <i class="fa-solid fa-shield-halved"></i>
+        ALIBI AI
+    </div>
+
+    <ul>
+        <li><a href="/">Home</a></li>
+        <li><a href="/login">Login</a></li>
+        <li><a href="/dashboard">Dashboard</a></li>
+    </ul>
+</nav>
+
+<section class="hero">
+
+    <div class="hero-text">
+
+        <h1>AI Interview Fraud Detection System</h1>
+
+        <p>
+            Detect cheating during online interviews using Artificial Intelligence,
+            facial analysis, eye tracking, voice monitoring and behavioural analytics.
+        </p>
+
+        <div class="buttons">
+            <a href="/login" class="btn">Get Started</a>
+            <a href="#features" class="btn2">Explore</a>
+        </div>
+
+    </div>
+
+    <div class="hero-image">
+        <img src="https://cdn-icons-png.flaticon.com/512/4712/4712109.png"
+             alt="AI">
+    </div>
+
+</section>
+
+<section id="features" class="features">
+
+    <h2>AI Powered Features</h2>
+
+    <div class="cards">
+
+        <div class="card">
+            <i class="fa-solid fa-eye"></i>
+            <h3>Eye Tracking</h3>
+            <p>Detects suspicious eye movements during interviews.</p>
+        </div>
+
+        <div class="card">
+            <i class="fa-solid fa-face-smile"></i>
+            <h3>Emotion Analysis</h3>
+            <p>Analyzes candidate confidence and facial expressions.</p>
+        </div>
+
+        <div class="card">
+            <i class="fa-solid fa-mobile-screen-button"></i>
+            <h3>Phone Detection</h3>
+            <p>Detects mobile phone usage using AI vision.</p>
+        </div>
+
+        <div class="card">
+            <i class="fa-solid fa-users"></i>
+            <h3>Multiple Person Detection</h3>
+            <p>Detects if another person enters the interview.</p>
+        </div>
+
+        <div class="card">
+            <i class="fa-solid fa-microphone"></i>
+            <h3>Voice Analysis</h3>
+            <p>Monitors speech consistency and voice stress.</p>
+        </div>
+
+        <div class="card">
+            <i class="fa-solid fa-file-lines"></i>
+            <h3>AI Report</h3>
+            <p>Generates a complete fraud analysis report.</p>
+        </div>
+
+    </div>
+
+</section>
+
+<section class="workflow">
+
+    <h2>How It Works</h2>
+
+    <div class="steps">
+
+        <div class="step">
+            <span>1</span>
+            <h3>Start Interview</h3>
+        </div>
+
+        <div class="step">
+            <span>2</span>
+            <h3>AI Monitoring</h3>
+        </div>
+
+        <div class="step">
+            <span>3</span>
+            <h3>Fraud Analysis</h3>
+        </div>
+
+        <div class="step">
+            <span>4</span>
+            <h3>Generate Report</h3>
+        </div>
+
+    </div>
+
+</section>
+
+<footer>
+
+    <h3>ALIBI AI</h3>
+
+    <p>
+        Smart AI based Interview Monitoring Platform
+    </p>
+
+    <p>© 2026 All Rights Reserved</p>
+
+</footer>
+
+<script src="{{ url_for('static', filename='js/script.js') }}"></script>
+
+</body>
+</html>
