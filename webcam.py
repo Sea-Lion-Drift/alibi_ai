@@ -1,6 +1,6 @@
 import cv2
 from ultralytics import YOLO
-from AI.stats import interview_stats
+from stats import interview_stats
 
 # ==========================
 # Load YOLO Model
