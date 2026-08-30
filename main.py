@@ -3,7 +3,7 @@ from datetime import datetime
 import random
 
 # Import webcam stream
-from AI.webcam import generate_frames
+from webcam import generate_frames
 
 app = Flask(__name__)
 
@@ -13,7 +13,7 @@ candidate_data = {}
 # LIVE INTERVIEW STATS
 # ==========================================
 
-from AI.stats import interview_stats
+from stats import interview_stats
 # ==========================
 # INTERVIEW QUESTIONS
 # ==========================
